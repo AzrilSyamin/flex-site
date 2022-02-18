@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-menu{
+    display: none;
+}
+
+/*Responsive*/
+@media(max-width:576px){
+  nav{
+    display: flex;
+    background-color: #00008b;
+    padding: 4px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  nav .logo {
+    color: white;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo img{
+    width: 30px;
+    /*display:inline;*/
+    margin: 0 8px;
+  }
+  
+  /*.logo p{*/
+  /*  display: inline;*/
+  /*}*/
+  
+  nav ul{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: #00008B;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1.5s;
+  }
+  
+  nav ul.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  nav ul li a{
+    display: inline-block;
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+  }
+  
+  .btn-menu{
+    display: flex;
+    margin:10px;
+    width: 50px;
+    height: 25px;
+    /*background-color: blue;*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-menu span{
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    margin: 0 2px;
+  }
+  
+  .btn-menu:active span{
+    width: 30%;
+    height: 1px;
+  }
+  
+  .container{
+    margin:0 10px;
+    padding-top: 60px;
+  }
+  
+  .hero {
+    background-color: lightblue;
+    width: 100%;
+    height: 30vh;
+    margin: 4px 0;
+    background-image: url('img/hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .content .serviceses{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services{
+    padding: 4px;
+    margin: 8px 0;
+    border: .5px solid lightblue;
+    box-shadow: 1px 1px 3px lightblue;
+    text-align: center;
+    border-radius:10px ;
+  }
+  
+  .services h4{
+    padding: 10px;
+  }
+  
+  .services img{
+    width: 50px;
+  }
+  
+  .detail{
+    display: flex;
+    flex-direction: column;
+    border: .5px solid lightblue;
+    box-shadow: 1px 1px 3px lightblue;
+    margin: 16px 0;
+  }
+  
+  .detail img{
+    width: 100%;
+  }
+  
+  .detail p{
+    margin: 8px;
+  }
+  
+  .dfront-end-design img{
+    order:2;
+  }
+  
+  .dfront-end-design p{
+    order: 1;
+  }
+  
+  
+  
+  
+  footer{
+    background-color: #00008b;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  footer h3{
+    color: yellow;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color:white;
+    padding: 4px;
+    display: inline-block;
+  }
+  
+}
