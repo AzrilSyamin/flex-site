@@ -32,7 +32,6 @@
   
   nav .logo img{
     width: 30px;
-    /*display:inline;*/
     margin: 0 8px;
   }
   
@@ -41,12 +40,12 @@
   /*}*/
   
   nav ul{
-    display: flex;
+    /*display: flex;*/
     position: absolute;
     list-style: none;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    /*justify-content:center;*/
+    /*flex-direction: column;*/
     top: 0;
     left: 0;
     height: 100vh;
@@ -63,16 +62,22 @@
   }
   
   nav ul li a{
-    display: inline-block;
+    display: block;
     color: white;
-    padding: 4px 8px;
+    padding:16px 8px;
     text-decoration: none;
+  }
+  
+  nav ul li a:hover{
+    color: #00008b;
+    background-color: white;
+    border-bottom: 1px solid #7fffd4;
   }
   
   .btn-menu{
     display: flex;
-    margin:10px;
-    width: 50px;
+    margin:13px 10px;
+    width: 35px;
     height: 25px;
     /*background-color: blue;*/
     flex-direction: column;
@@ -113,28 +118,28 @@
   }
   
   .services{
-    padding: 4px;
+    padding: 8px;
     margin: 8px 0;
-    border: .5px solid lightblue;
-    box-shadow: 1px 1px 3px lightblue;
+    box-shadow: 0 0 4px lightblue;
     text-align: center;
     border-radius:10px ;
   }
   
   .services h4{
-    padding: 10px;
+    padding: 8px;
   }
   
   .services img{
-    width: 50px;
+    width: 80px;
   }
   
   .detail{
     display: flex;
     flex-direction: column;
-    border: .5px solid lightblue;
-    box-shadow: 1px 1px 3px lightblue;
+    box-shadow: 0 0 4px lightblue;
     margin: 16px 0;
+    border-radius: 4px;
+    overflow: hidden;
   }
   
   .detail img{
@@ -156,21 +161,81 @@
   
   
   
-  footer{
+  .footer{
     background-color: #00008b;
     padding: 8px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   
-  footer h3{
+  .footer h3{
     color: yellow;
   }
   
-  footer a{
+  .footer .channel{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin: 8px 0;
+  }
+  
+  .footer .channel img{
+    width:50px;
+  }
+  
+  .footer .footer-menu{
+    flex-grow: 1;
+    margin: 8px 0;
+  }
+  
+  .footer .footer-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  
+  .footer .footer-menu a{
     text-decoration: none;
     color:white;
     padding: 4px;
     display: inline-block;
   }
+  
+  .footer .contact-form{
+    margin: 8px 0;
+    flex-grow:1;
+  }
+  
+  .footer .contact-form input{
+    margin: 4px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .footer .contact-form a{
+    display: inline-block;
+    background-color: yellow;
+    padding: 8px 16px;
+    color: #00008b;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 4px 0;
+  }
+  
+  .footer-credit{
+    padding: 16px 0;
+    flex-grow: 2;
+    background-color: #483d8b;
+  }
+  
+  footer .footer-credit p{
+    color: white;
+    text-align: center;
+  }
+  
   
 }
