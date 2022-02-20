@@ -4,8 +4,181 @@
   box-sizing: border-box;
 }
 
+nav{
+  display: flex;
+  background-color: #00008b;
+  padding: 4px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+}
+
+nav .logo{
+  display: flex;
+  color: white;
+  margin: 8px;
+  align-items: center;
+}
+
+nav .logo img{
+  width: 50px;
+  margin:8px ;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /*position: relative;*/
+  list-style: none;
+}
+
+nav li a{
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .btn-menu{
     display: none;
+}
+
+.container{
+  padding:100px 16px 16px 16px;
+}
+
+.container .hero{
+  width: 100%;
+  height:20vh;
+  background-color: lightblue;
+  background-image: url('img/hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content .serviceses{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.serviceses .services{
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 0 4px lightblue;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.services img{
+  width: 80px;
+}
+
+.services h4{
+  padding:8px;
+}
+
+.services p{
+  padding:8px;
+}
+
+.detail-services .detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  box-shadow: 0 0 4px lightblue;
+  margin: 16px 0;
+}
+
+.detail:nth-child(2) img{
+  order: 2;
+}
+
+.detail img{
+  width: 40%;
+  margin: 8px;
+}
+
+.detail p{
+  padding: 16px;
+  width: 50%;
+}
+
+.footer{
+  background-color: #00008b;
+  padding:8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer h3{
+  color: yellow;
+}
+
+.channel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  margin: 8px;
+}
+
+.channel img{
+  width: 50px;
+  padding: 8px;
+}
+
+.footer-menu{
+  width: 30%;
+  margin: 8px;
+}
+
+.footer-menu ul{
+  list-style: none;
+}
+
+.footer-menu a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.contact-form{
+  width: 30%;
+  margin: 8px;
+  text-align: center;
+}
+
+.contact-form input{
+  padding: 4px;
+  margin: 8px;
+}
+
+.contact-form a{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: yellow;
+  color: #00008b;
+  margin: 16px 0;
+  text-decoration: none;
+}
+
+.footer-credit{
+  padding: 16px 0;
+  color: white;
+  text-align: center;
+  flex-grow: 2;
+  background-color: #483d8b;
 }
 
 /*Responsive*/
@@ -40,12 +213,12 @@
   /*}*/
   
   nav ul{
-    /*display: flex;*/
+    display: flex;
     position: absolute;
     list-style: none;
-    /*flex-wrap: wrap;*/
-    /*justify-content:center;*/
-    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: column;
     top: 0;
     left: 0;
     height: 100vh;
