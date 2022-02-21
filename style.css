@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav{
+nav {
   display: flex;
   background-color: #00008b;
   padding: 4px;
@@ -17,19 +17,19 @@ nav{
   align-items: center;
 }
 
-nav .logo{
+nav .logo {
   display: flex;
   color: white;
   margin: 8px;
   align-items: center;
 }
 
-nav .logo img{
+nav .logo img {
   width: 50px;
-  margin:8px ;
+  margin: 8px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -37,59 +37,55 @@ nav ul{
   list-style: none;
 }
 
-nav li a{
+nav li a {
   color: white;
   padding: 8px 16px;
   text-decoration: none;
   display: inline-block;
 }
 
-.btn-menu{
-    display: none;
+.btn-menu {
+  display: none;
 }
 
-.container{
-  padding:100px 16px 16px 16px;
+.container {
+  padding: 100px 16px 16px 16px;
 }
 
-.container .hero{
+.container .hero {
   width: 100%;
-  height:20vh;
+  height: 20vh;
   background-color: lightblue;
   background-image: url('img/hero.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.content .serviceses{
-  display:flex;
+.content .serviceses {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.serviceses .services{
+.serviceses .services {
   width: 30%;
   text-align: center;
   box-shadow: 0 0 4px lightblue;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 16px 0;
 }
 
-.services img{
+.services h4 {
+  padding: 8px;
+}
+
+.services img {
   width: 80px;
 }
 
-.services h4{
-  padding:8px;
-}
-
-.services p{
-  padding:8px;
-}
-
-.detail-services .detail{
+.detail-services .detail {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -99,91 +95,97 @@ nav li a{
   margin: 16px 0;
 }
 
-.detail:nth-child(2) img{
+.detail:nth-child(2) img {
   order: 2;
 }
 
-.detail img{
+.detail img {
   width: 40%;
   margin: 8px;
 }
 
-.detail p{
+.detail p {
   padding: 16px;
   width: 50%;
 }
 
-.footer{
+.footer {
   background-color: #00008b;
-  padding:8px;
+  padding: 8px;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
-.footer h3{
+.footer h3 {
   color: yellow;
 }
 
-.channel{
+.footer .channel {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 30%;
   margin: 8px;
 }
 
-.channel img{
+.footer .channel img {
   width: 50px;
   padding: 8px;
 }
 
-.footer-menu{
+.footer .footer-menu {
   width: 30%;
   margin: 8px;
 }
 
-.footer-menu ul{
+.footer .footer-menu ul {
   list-style: none;
 }
 
-.footer-menu a{
+.footer .footer-menu a {
   text-decoration: none;
   color: white;
-  
+  padding: 4px;
+  display: inline-block;
+
 }
 
-.contact-form{
+.footer .contact-form {
   width: 30%;
   margin: 8px;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.contact-form input{
+.footer .contact-form input {
   padding: 4px;
   margin: 8px;
+  border-radius: 4px;
 }
 
-.contact-form a{
+.footer .contact-form a {
   display: inline-block;
-  padding: 8px 16px;
   background-color: yellow;
+  padding: 8px 16px;
   color: #00008b;
-  margin: 16px 0;
   text-decoration: none;
+  border-radius: 5px;
+  margin: 16px 0;
 }
 
-.footer-credit{
+.footer-credit {
   padding: 16px 0;
   color: white;
   text-align: center;
-  flex-grow: 2;
+  width: 100%;
   background-color: #483d8b;
 }
 
 /*Responsive*/
-@media(max-width:576px){
-  nav{
+@media(max-width:576px) {
+  nav {
     display: flex;
     background-color: #00008b;
     padding: 4px;
@@ -195,29 +197,29 @@ nav li a{
     flex-wrap: wrap;
     align-items: center;
   }
-  
+
   nav .logo {
     color: white;
     padding: 4px;
     display: flex;
     align-items: center;
   }
-  
-  nav .logo img{
+
+  nav .logo img {
     width: 30px;
     margin: 0 8px;
   }
-  
+
   /*.logo p{*/
   /*  display: inline;*/
   /*}*/
-  
-  nav ul{
+
+  nav ul {
     display: flex;
     position: absolute;
     list-style: none;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     top: 0;
     left: 0;
@@ -228,28 +230,28 @@ nav li a{
     opacity: 0;
     transition: all 1.5s;
   }
-  
-  nav ul.active{
+
+  nav ul.active {
     transform: translateX(0);
     opacity: 1;
   }
-  
-  nav ul li a{
+
+  nav ul li a {
     display: block;
     color: white;
-    padding:16px 8px;
+    padding: 16px 8px;
     text-decoration: none;
   }
-  
-  nav ul li a:hover{
+
+  nav ul li a:hover {
     color: #00008b;
     background-color: white;
     border-bottom: 1px solid #7fffd4;
   }
-  
-  .btn-menu{
+
+  .btn-menu {
     display: flex;
-    margin:13px 10px;
+    margin: 13px 10px;
     width: 35px;
     height: 25px;
     /*background-color: blue;*/
@@ -257,24 +259,24 @@ nav li a{
     justify-content: space-between;
     align-items: center;
   }
-  
-  .btn-menu span{
+
+  .btn-menu span {
     width: 90%;
     height: 3px;
     background-color: white;
     margin: 0 2px;
   }
-  
-  .btn-menu:active span{
+
+  .btn-menu:active span {
     width: 30%;
     height: 1px;
   }
-  
-  .container{
-    margin:0 10px;
+
+  .container {
+    margin: 0 10px;
     padding-top: 60px;
   }
-  
+
   .hero {
     background-color: lightblue;
     width: 100%;
@@ -284,29 +286,30 @@ nav li a{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  .content .serviceses{
+
+  .content .serviceses {
     display: flex;
     flex-direction: column;
   }
-  
-  .services{
-    padding: 8px;
-    margin: 8px 0;
-    box-shadow: 0 0 4px lightblue;
+
+  .serviceses .services {
+    width: 100%;
     text-align: center;
-    border-radius:10px ;
+    box-shadow: 0 0 4px lightblue;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px 0;
   }
-  
-  .services h4{
+
+  .services h4 {
     padding: 8px;
   }
-  
-  .services img{
+
+  .services img {
     width: 80px;
   }
-  
-  .detail{
+
+  .detail-services .detail {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 4px lightblue;
@@ -314,82 +317,85 @@ nav li a{
     border-radius: 4px;
     overflow: hidden;
   }
-  
-  .detail img{
+
+  .detail img {
     width: 100%;
   }
-  
-  .detail p{
+
+  .detail p {
     margin: 8px;
   }
-  
-  .dfront-end-design img{
-    order:2;
+
+  .dfront-end-design img {
+    order: 2;
   }
-  
-  .dfront-end-design p{
+
+  .dfront-end-design p {
     order: 1;
   }
-  
-  
-  
-  
-  .footer{
+
+
+
+
+  .footer {
     background-color: #00008b;
     padding: 8px;
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    flex-direction: column;
   }
-  
-  .footer h3{
+
+  .footer h3 {
     color: yellow;
   }
-  
-  .footer .channel{
+
+  .footer .channel {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-grow: 2;
+    width: 100%;
     margin: 8px 0;
   }
-  
-  .footer .channel img{
-    width:50px;
+
+  .footer .channel img {
+    width: 50px;
+    padding: 8px;
   }
-  
-  .footer .footer-menu{
-    flex-grow: 1;
+
+  .footer .footer-menu {
+    width: 100%;
     margin: 8px 0;
   }
-  
-  .footer .footer-menu ul{
+
+  .footer .footer-menu ul {
     list-style: none;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:flex-start; */
   }
-  
-  .footer .footer-menu a{
+
+  .footer .footer-menu a {
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 4px;
     display: inline-block;
   }
-  
-  .footer .contact-form{
+
+  .footer .contact-form {
+    width: 100%;
     margin: 8px 0;
-    flex-grow:1;
+    /* text-align: center; */
   }
-  
-  .footer .contact-form input{
+
+  .footer .contact-form input {
     margin: 4px;
     padding: 4px;
     border-radius: 4px;
   }
-  
-  .footer .contact-form a{
+
+  .footer .contact-form a {
     display: inline-block;
     background-color: yellow;
     padding: 8px 16px;
@@ -398,17 +404,13 @@ nav li a{
     border-radius: 5px;
     margin: 4px 0;
   }
-  
-  .footer-credit{
+
+  .footer-credit {
     padding: 16px 0;
-    flex-grow: 2;
-    background-color: #483d8b;
-  }
-  
-  footer .footer-credit p{
     color: white;
     text-align: center;
+    width: 100%;
+    background-color: #483d8b;
   }
-  
-  
+
 }
