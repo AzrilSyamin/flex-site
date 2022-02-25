@@ -7,41 +7,47 @@
 nav {
   display: flex;
   background-color: #00008b;
-  padding: 4px;
+  padding: 4px 10px;
   position: fixed;
   right: 0;
   left: 0;
   top: 0;
   justify-content: space-between;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   align-items: center;
 }
 
 nav .logo {
-  display: flex;
   color: white;
-  margin: 8px;
+  padding: 4px;
+  display: flex;
   align-items: center;
 }
 
 nav .logo img {
-  width: 50px;
-  margin: 8px;
+  width: 40px;
+  margin: 0 8px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /*position: relative;*/
   list-style: none;
+  margin-right: 10px;
 }
 
-nav li a {
+nav ul li a {
   color: white;
   padding: 8px 16px;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00008b;
+  background-color: white;
+  border-bottom: 1px solid #7fffd4;
 }
 
 .btn-menu {
@@ -49,17 +55,17 @@ nav li a {
 }
 
 .container {
-  padding: 100px 16px 16px 16px;
+  padding: 60px 8px 8px 8px;
 }
 
 .container .hero {
-  width: 100%;
-  height: 20vh;
   background-color: lightblue;
+  width: 100%;
+  height: 70vh;
   background-image: url('img/hero.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -180px;
+  background-position: 50%;
 }
 
 .content .serviceses {
@@ -91,26 +97,19 @@ nav li a {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border-radius: 4px;
-  /*box-shadow: 0 0 4px lightblue;*/
   margin: 16px 0;
 }
 
-.detail-services .detail:hover {
-    box-shadow: 0 0 4px lightblue
-  }
-
-.detail:nth-child(4) img {
+.detail:nth-child(2) img {
   order: 2;
 }
 
 .detail img {
   width: 40%;
-  margin: 8px;
 }
 
 .detail p {
-  padding: 16px;
+  padding: 8px;
   width: 50%;
 }
 
@@ -133,7 +132,7 @@ nav li a {
   flex-direction: row;
   justify-content: space-evenly;
   width: 30%;
-  margin: 8px;
+  margin: 8px 0;
 }
 
 .footer .channel img {
@@ -143,7 +142,7 @@ nav li a {
 
 .footer .footer-menu {
   width: 30%;
-  margin: 8px;
+  margin: 8px 0;
 }
 
 .footer .footer-menu ul {
@@ -160,13 +159,13 @@ nav li a {
 
 .footer .contact-form {
   width: 30%;
-  margin: 8px;
+  margin: 8px 0;
   /* text-align: center; */
 }
 
 .footer .contact-form input {
   padding: 4px;
-  margin: 8px;
+  margin: 4px;
   border-radius: 4px;
 }
 
@@ -177,7 +176,7 @@ nav li a {
   color: #00008b;
   text-decoration: none;
   border-radius: 5px;
-  margin: 16px 0;
+  margin: 4px 0;
 }
 
 .footer-credit {
@@ -193,7 +192,7 @@ nav li a {
   nav {
     display: flex;
     background-color: #00008b;
-    padding: 4px;
+    padding: 4px 10px;
     position: fixed;
     right: 0;
     left: 0;
@@ -214,10 +213,6 @@ nav li a {
     width: 30px;
     margin: 0 8px;
   }
-
-  /*.logo p{*/
-  /*  display: inline;*/
-  /*}*/
 
   nav ul {
     display: flex;
@@ -242,9 +237,9 @@ nav li a {
   }
 
   nav ul li a {
-    display: block;
     color: white;
     padding: 16px 8px;
+    display: block;
     text-decoration: none;
   }
 
@@ -286,7 +281,7 @@ nav li a {
     background-color: lightblue;
     width: 100%;
     height: 30vh;
-    margin: 4px 0;
+    margin: 8px 0;
     background-image: url('img/hero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,41 +312,30 @@ nav li a {
   .detail-services .detail {
     display: flex;
     flex-direction: column;
-    /*box-shadow: 0 0 4px lightblue;*/
-    margin: 16px 0;
-    border-radius: 4px;
     overflow: hidden;
     align-items: center;
-    /*justify-content: center;*/
     flex-wrap: no-wrap;
+    margin: 16px 0;
+    align-content: center;
   }
-  
-  .detail-services .detail:hover {
-    box-shadow: 0 0 4px lightblue;
+
+  .detail:nth-child(2) img {
+    order: 2;
   }
-  
+
   .detail img {
-    width: 90%;
-    margin: 8px;
+    width: 98%;
   }
 
   .detail p {
     width: 100%;
-    padding: 16px;
+    padding: 8px;
   }
-
-  .detail:nth-child(4) img {
-  order: 2;
-}
-
-
-
 
   .footer {
     background-color: #00008b;
     padding: 8px;
     display: flex;
-    /* flex-wrap: wrap; */
     text-align: center;
     flex-direction: column;
   }
@@ -381,9 +365,6 @@ nav li a {
 
   .footer .footer-menu ul {
     list-style: none;
-    /* display: flex;
-    flex-direction: column;
-    align-items:flex-start; */
   }
 
   .footer .footer-menu a {
